@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;  
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.feature-card {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* API Section */
+.api-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+input {
+  padding: 0.6rem;
+  width: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+

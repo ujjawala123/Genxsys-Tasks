@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+
+  <!-- GSAP -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyApp</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#api">GitHub Search</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h2>Build Modern Web Experiences</h2>
+    <p>Responsive • Animated • API Powered</p>
+    <a href="#features" class="btn">Explore</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="feature-card">⚡ Fast</div>
+    <div class="feature-card">📱 Responsive</div>
+    <div class="feature-card">🔗 API Driven</div>
+  </section>
+
+  <!-- API Section -->
+  <section id="api" class="api-section">
+    <h2>GitHub User Search</h2>
+    <input type="text" id="search" placeholder="Search GitHub username..." />
+    <div id="result"></div>
+    <p id="loading" class="hidden">Loading...</p>
+    <p id="error" class="error"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyApp by Ujjawala. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
